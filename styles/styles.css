@@ -663,16 +663,20 @@ footer-signup-container {
   font-size: 20px;
   font-weight: 700px;
   text-align: center;
-  color: #212121;
   margin-top: 40px;
-  margin-left: 40px;
+  line-height: 1.14;
   margin-right: 40px;
   margin-bottom: 12px;
+  font-family: roboto;
+  font-style: bold;
+  line-height: 23px;
+  text-align: center;
+  color: rgba(33, 33, 33, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  fill: solid var(--h-clr);
 }
 
 .modal-data {
-  margin-left: 40px;
-  margin-right: 40px;
   margin-bottom: 20px;
   width: 448px;
   height: 342px;
@@ -727,6 +731,10 @@ footer-signup-container {
   display: block;
   width: 448px;
 }
+.textarea-data .input data {
+  padding-left: 40px;
+}
+
 textarea-data:hover,
 textarea-data:focus {
   border: 1px solid #2196f3;
@@ -805,7 +813,7 @@ modal-agreement-confirm {
   padding-left: 55px;
   padding-right: 55px;
   margin-bottom: 40px;
-
+  border-color: none;
   width: 200px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
