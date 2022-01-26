@@ -660,9 +660,9 @@ footer-signup-container {
 }
 
 .modal-title {
+  width: 448px;
   font-size: 20px;
-  font-weight: 700px;
-  text-align: center;
+  font-weight: 700;
   margin-top: 40px;
   line-height: 1.14;
   margin-right: 40px;
@@ -670,10 +670,8 @@ footer-signup-container {
   font-family: roboto;
   font-style: bold;
   line-height: 23px;
-  text-align: center;
+  text-align: left;
   color: rgba(33, 33, 33, 1);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  fill: solid var(--h-clr);
 }
 
 .modal-data {
@@ -755,9 +753,10 @@ textarea-data:focus {
   display: block;
   width: 448px;
   height: 120px;
-
+  padding-left: 10px;
   margin-top: 4px;
   resize: none;
+  padding: 12px 16px;
 }
 .textarea-data:hover,
 .textarea-data:focus {
@@ -777,18 +776,18 @@ textarea-data:focus {
   width: 16px;
   height: 15px;
   display: inline-block;
-  border: 1px solid black;
-  border-radius: 4px;
-  background-image: url(../images/icon-vector);
-  background-size: contain;
+  border: 1px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  background-image: url(../images/vector.svg);
+  background-position: center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
 }
 .checkbox:checked + .checkbox-icon {
   background-color: var(--icon-accent-cl);
-  background-image: url(../images/vector.svg);
-  /* background-size: contain; */
-  background-position: center;
-  background-origin: content-box;
-  border-color: transparent;
+  border: 1px solid var(--icon-accent-cl);
 }
 .icon-label {
   transform: scale(1.2);
@@ -819,6 +818,7 @@ modal-agreement-confirm {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--main-bcgclr);
   background-color: var(--btn-main-bg);
+  cursor: pointer;
 }
 
 .modal-button:hover,
@@ -835,10 +835,6 @@ modal-agreement-confirm {
 }
 .close-modal-button:active {
   background-color: var(--btn-main-bg);
-}
-.checkbox-icon {
-  width: 16px;
-  height: 15px;
 }
 /* PORTFOLIO PAGE */
 /* MAIN section */
